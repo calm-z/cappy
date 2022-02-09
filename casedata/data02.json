@@ -1,0 +1,272 @@
+[
+  {
+    "id": "测试用例01",
+    "tag": "autotest",
+    "desc": "此条用例测试login接口",
+    "author": "赵宁",
+    "database": "LOCAL_DB",
+    "before": {
+      "requests": [
+        {
+        "url": "http://39.98.138.157:8008/login/",
+        "desc": "这是第一个接口，请求接口获取返回值，并记录部分数据",
+        "method": "post",
+        "headers": {},
+        "params": {},
+        "body": {
+          "name": "admin",
+          "password": "123456"
+        },
+        "status_code": 200,
+        "placeHolder": {
+          "openid": "$.data.openid"
+        },
+        "Assert": {
+          "$.code": "200",
+          "$.msg": "Success Create",
+          "$.data.name": "admin",
+          "$.data.openid": "ee05c00110670eb569d9073af06bd1a0",
+          "$.ip": "111.199.188.94"
+        },
+        "KeysExist": [
+          "$.code",
+          "$.msg",
+          "$.data.name",
+          "$.data.openid",
+          "$.ip"
+        ],
+        "WaitTime": 1000
+      }
+      ],
+      "dbAssert": [
+        {
+          "sql": "select name,age from users;",
+          "placeHolder": {
+            "name_0": "0,0",
+            "name_1": "1,0"
+          }
+        },
+        {
+          "sql": "select name,age from users;",
+          "placeHolder": {
+            "name_2": "0,0",
+            "name_3": "1,0"
+          }
+        }
+      ]
+    },
+    "requests": [
+      {
+        "url": "http://39.98.138.157:8008/login/",
+        "desc": "这是第一个接口，请求接口获取返回值，并记录部分数据",
+        "method": "post",
+        "headers": {},
+        "params": {},
+        "body": {
+          "name": "admin",
+          "password": "123456"
+        },
+        "status_code": 200,
+        "placeHolder": {
+          "code": "$.code",
+          "msg": "$.msg",
+          "name": "$.data.name",
+          "openid": "$.data.openid",
+          "ip": "$.ip"
+        },
+        "Assert": {
+          "$.code": "200",
+          "$.msg": "Success Create",
+          "$.data.name": "admin",
+          "$.data.openid": "ee05c00110670eb569d9073af06bd1a0",
+          "$.ip": "111.199.188.94"
+        },
+        "KeysExist": [
+          "$.code",
+          "$.msg",
+          "$.data.name",
+          "$.data.openid",
+          "$.ip"
+        ],
+        "WaitTime": 1000
+      },
+      {
+        "url": "http://39.98.138.157:8008/asn/list/",
+        "desc": "这是第二个接口，请求接口获取返回值，并记录部分数据",
+        "method": "post",
+        "headers": {
+          "token": "${openid}"
+        },
+        "params": {},
+        "body": {
+          "creater": "admin"
+        },
+        "status_code": 200,
+        "placeHolder": {
+          "id": "$.id",
+          "asn_code": "$.asn_code",
+          "bar_code": "$.bar_code",
+          "creater": "$.creater"
+        },
+        "Assert": {
+          "$.openid": "${openid}"
+        },
+        "KeysExist": [
+          "$.id",
+          "$.asn_code",
+          "$.supplier",
+          "$.bar_code",
+          "$.asn_status",
+          "$.total_weight"
+        ],
+        "WaitTime": 1000
+      }
+    ],
+    "after": {
+      "requests": [
+        {
+        "url": "http://39.98.138.157:8008/login/",
+        "desc": "这是第一个接口，请求接口获取返回值，并记录部分数据",
+        "method": "post",
+        "headers": {},
+        "params": {},
+        "body": {
+          "name": "admin",
+          "password": "123456"
+        },
+        "status_code": 200,
+        "placeHolder": {
+          "openid": "$.data.openid"
+        },
+        "Assert": {
+          "$.code": "200",
+          "$.msg": "Success Create",
+          "$.data.name": "admin",
+          "$.data.openid": "ee05c00110670eb569d9073af06bd1a0",
+          "$.ip": "111.199.188.94"
+        },
+        "KeysExist": [
+          "$.code",
+          "$.msg",
+          "$.data.name",
+          "$.data.openid",
+          "$.ip"
+        ],
+        "WaitTime": 1000
+      }
+      ],
+      "dbAssert": [
+        {
+          "sql": "select name,age from users;",
+          "placeHolder": {
+            "name_0": "0,0",
+            "name_1": "1,0"
+          }
+        },
+        {
+          "sql": "select name,age from users;",
+          "placeHolder": {
+            "name_2": "0,0",
+            "name_3": "1,0"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "测试用例02",
+    "tag": "autotest",
+    "desc": "用例描述",
+    "author": "赵宁",
+    "database": "LOCAL_DB",
+    "before": {
+      "requests": [
+      ],
+      "dbAssert": [
+        {
+          "sql": "select name,age from users;",
+          "placeHolder": {
+            "name_4": "0,0",
+            "name_5": "1,0"
+          }
+        },
+        {
+          "sql": "select name,age from users;",
+          "placeHolder": {
+            "name_6": "0,0",
+            "name_7": "1,0"
+          }
+        }
+      ]
+    },
+    "requests": [
+      {
+        "url": "http://39.98.138.157:8008/login/",
+        "desc": "这是第一个接口，请求接口获取返回值，并记录部分数据",
+        "method": "post",
+        "headers": {},
+        "params": {},
+        "body": {
+          "name": "admin",
+          "password": "123456"
+        },
+        "status_code": 200,
+        "placeHolder": {
+          "code": "$.code",
+          "msg": "$.msg",
+          "name": "$.data.name",
+          "openid": "$.data.openid",
+          "ip": "$.ip"
+        },
+        "Assert": {
+          "$.code": "200",
+          "$.msg": "Success Create",
+          "$.data.name": "admin",
+          "$.data.openid": "ee05c00110670eb569d9073af06bd1a0",
+          "$.ip": "111.199.188.94"
+        },
+        "KeysExist": [
+          "$.code",
+          "$.msg",
+          "$.data.name",
+          "$.data.openid",
+          "$.ip"
+        ],
+        "WaitTime": 1000
+      },
+      {
+        "url": "http://39.98.138.157:8008/asn/list/",
+        "desc": "这是第二个接口，请求接口获取返回值，并记录部分数据",
+        "method": "post",
+        "headers": {
+          "token": "${openid}"
+        },
+        "params": {},
+        "body": {
+          "creater": "admin"
+        },
+        "status_code": 200,
+        "placeHolder": {
+          "id": "$.id",
+          "asn_code": "$.asn_code",
+          "bar_code": "$.bar_code",
+          "creater": "$.creater"
+        },
+        "Assert": {
+          "$.openid": "${openid}"
+        },
+        "KeysExist": [
+          "$.id",
+          "$.asn_code",
+          "$.supplier",
+          "$.bar_code",
+          "$.asn_status",
+          "$.total_weight"
+        ],
+        "WaitTime": 1000
+      }
+    ],
+    "after": {
+    }
+  }
+]
