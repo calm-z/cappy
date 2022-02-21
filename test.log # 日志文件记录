@@ -1,239 +1,239 @@
-2022-02-18 14:28:56 - executor1.py - executor1 - execute1 - 15 - DEBUG - ----------开始执行用例：测试用例03----------
-2022-02-18 14:28:56 - executor1.py - executor1 - execute1 - 29 - DEBUG - 数据库元素记录成功：{'name_0': '赵宁', 'name_1': '李晨宇', 'name_2': '赵宁', 'name_3': '李晨宇'}
-2022-02-18 14:28:56 - connectionpool.py - connectionpool - _new_conn - 228 - DEBUG - Starting new HTTP connection (1): 39.98.138.157:8008
-2022-02-18 14:28:56 - connectionpool.py - connectionpool - _make_request - 456 - DEBUG - http://39.98.138.157:8008 "POST /login/ HTTP/1.1" 200 136
-2022-02-18 14:28:56 - re_executor.py - re_executor - re_executor - 27 - DEBUG - url:http://39.98.138.157:8008/login/，method:POST，headers:{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '39', 'Content-Type': 'application/json'}，body:b'{"name": "admin", "password": "123456"}'
-2022-02-18 14:28:56 - re_executor.py - re_executor - re_executor - 30 - DEBUG - response:{"code": "200", "msg": "Success Create", "data": {"name": "admin", "openid": "ee05c00110670eb569d9073af06bd1a0"}, "ip": "61.50.119.242"}
-2022-02-18 14:28:56 - re_executor.py - re_executor - re_executor - 32 - DEBUG - WaitTime：1000
-2022-02-18 14:28:57 - re_executor.py - re_executor - re_executor - 36 - DEBUG - 接口状态断言成功，200 == 200
-2022-02-18 14:28:57 - re_executor.py - re_executor - re_executor - 45 - DEBUG - 元素记录成功：{'name_0': '赵宁', 'name_1': '李晨宇', 'name_2': '赵宁', 'name_3': '李晨宇', 'code': '200', 'msg': 'Success Create', 'name': 'admin', 'openid': 'ee05c00110670eb569d9073af06bd1a0', 'ippp': '61.50.119.242'}
-2022-02-18 14:28:57 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.code 断言成功，200 == 200
-2022-02-18 14:28:57 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.msg 断言成功，Success Create == Success Create
-2022-02-18 14:28:57 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.name 断言成功，admin == admin
-2022-02-18 14:28:57 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.openid 断言成功，ee05c00110670eb569d9073af06bd1a0 == ee05c00110670eb569d9073af06bd1a0
-2022-02-18 14:28:57 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.code 存在
-2022-02-18 14:28:57 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.msg 存在
-2022-02-18 14:28:57 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.data.name 存在
-2022-02-18 14:28:57 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.data.openid 存在
-2022-02-18 14:28:57 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.ip 存在
-2022-02-18 14:28:57 - connectionpool.py - connectionpool - _make_request - 456 - DEBUG - http://39.98.138.157:8008 "POST /login/ HTTP/1.1" 200 136
-2022-02-18 14:28:57 - re_executor.py - re_executor - re_executor - 27 - DEBUG - url:http://39.98.138.157:8008/login/，method:POST，headers:{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'sessionid=7oht41prvplpdvwlb4fwg9gyjmgletur', 'Content-Length': '39', 'Content-Type': 'application/json'}，body:b'{"name": "admin", "password": "123456"}'
-2022-02-18 14:28:57 - re_executor.py - re_executor - re_executor - 30 - DEBUG - response:{"code": "200", "msg": "Success Create", "data": {"name": "admin", "openid": "ee05c00110670eb569d9073af06bd1a0"}, "ip": "61.50.119.242"}
-2022-02-18 14:28:57 - re_executor.py - re_executor - re_executor - 32 - DEBUG - WaitTime：1000
-2022-02-18 14:28:58 - re_executor.py - re_executor - re_executor - 36 - DEBUG - 接口状态断言成功，200 == 200
-2022-02-18 14:28:58 - re_executor.py - re_executor - re_executor - 45 - DEBUG - 元素记录成功：{'name_0': '赵宁', 'name_1': '李晨宇', 'name_2': '赵宁', 'name_3': '李晨宇', 'code': '200', 'msg': 'Success Create', 'name': 'admin', 'openid': 'ee05c00110670eb569d9073af06bd1a0', 'ippp': '61.50.119.242', 'ip': '61.50.119.242'}
-2022-02-18 14:28:58 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.code 断言成功，200 == 200
-2022-02-18 14:28:58 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.msg 断言成功，Success Create == Success Create
-2022-02-18 14:28:58 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.name 断言成功，admin == admin
-2022-02-18 14:28:58 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.openid 断言成功，ee05c00110670eb569d9073af06bd1a0 == ee05c00110670eb569d9073af06bd1a0
-2022-02-18 14:28:58 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.code 存在
-2022-02-18 14:28:58 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.msg 存在
-2022-02-18 14:28:58 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.data.name 存在
-2022-02-18 14:28:58 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.data.openid 存在
-2022-02-18 14:28:58 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.ip 存在
-2022-02-18 14:28:58 - connectionpool.py - connectionpool - _make_request - 456 - DEBUG - http://39.98.138.157:8008 "POST /asn/list/ HTTP/1.1" 200 321
-2022-02-18 14:28:58 - re_executor.py - re_executor - re_executor - 27 - DEBUG - url:http://39.98.138.157:8008/asn/list/，method:POST，headers:{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'token': 'ee05c00110670eb569d9073af06bd1a0', 'Cookie': 'sessionid=7oht41prvplpdvwlb4fwg9gyjmgletur', 'Content-Length': '20', 'Content-Type': 'application/json'}，body:b'{"creater": "admin"}'
-2022-02-18 14:28:58 - re_executor.py - re_executor - re_executor - 30 - DEBUG - response:{"id":4694,"openid":"ee05c00110670eb569d9073af06bd1a0","asn_code":"ASN00001424","supplier":"","bar_code":"44de9fcab46f45c04631e4a2deb4e01c","creater":"admin","asn_status":1,"total_weight":0.0,"total_volume":0.0,"transportation_fee":{},"create_time":"2022-02-18T14:28:58.953173","update_time":"2022-02-18T14:28:58.953203"}
-2022-02-18 14:28:58 - re_executor.py - re_executor - re_executor - 32 - DEBUG - WaitTime：1000
-2022-02-18 14:28:59 - re_executor.py - re_executor - re_executor - 36 - DEBUG - 接口状态断言成功，200 == 200
-2022-02-18 14:28:59 - re_executor.py - re_executor - re_executor - 45 - DEBUG - 元素记录成功：{'name_0': '赵宁', 'name_1': '李晨宇', 'name_2': '赵宁', 'name_3': '李晨宇', 'code': '200', 'msg': 'Success Create', 'name': 'admin', 'openid': 'ee05c00110670eb569d9073af06bd1a0', 'ippp': '61.50.119.242', 'ip': '61.50.119.242', 'id': 4694, 'asn_code': 'ASN00001424', 'bar_code': '44de9fcab46f45c04631e4a2deb4e01c', 'creater': 'admin'}
-2022-02-18 14:28:59 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.openid 断言成功，ee05c00110670eb569d9073af06bd1a0 == ee05c00110670eb569d9073af06bd1a0
-2022-02-18 14:28:59 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.id 存在
-2022-02-18 14:28:59 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.asn_code 存在
-2022-02-18 14:28:59 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.supplier 存在
-2022-02-18 14:28:59 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.bar_code 存在
-2022-02-18 14:28:59 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.asn_status 存在
-2022-02-18 14:28:59 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.total_weight 存在
-2022-02-18 14:28:59 - executor1.py - executor1 - execute1 - 38 - DEBUG - ----------用例测试用例03执行完毕----------
-2022-02-18 14:28:59 - executor1.py - executor1 - execute1 - 15 - DEBUG - ----------开始执行用例：测试用例04----------
-2022-02-18 14:28:59 - executor1.py - executor1 - execute1 - 29 - DEBUG - 数据库元素记录成功：{'name_4': '赵宁', 'name_5': '李晨宇', 'name_6': '赵宁', 'name_7': '李晨宇'}
-2022-02-18 14:28:59 - connectionpool.py - connectionpool - _new_conn - 228 - DEBUG - Starting new HTTP connection (1): 39.98.138.157:8008
-2022-02-18 14:29:00 - connectionpool.py - connectionpool - _make_request - 456 - DEBUG - http://39.98.138.157:8008 "POST /login/ HTTP/1.1" 200 136
-2022-02-18 14:29:00 - re_executor.py - re_executor - re_executor - 27 - DEBUG - url:http://39.98.138.157:8008/login/，method:POST，headers:{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '39', 'Content-Type': 'application/json'}，body:b'{"name": "admin", "password": "123456"}'
-2022-02-18 14:29:00 - re_executor.py - re_executor - re_executor - 30 - DEBUG - response:{"code": "200", "msg": "Success Create", "data": {"name": "admin", "openid": "ee05c00110670eb569d9073af06bd1a0"}, "ip": "61.50.119.242"}
-2022-02-18 14:29:00 - re_executor.py - re_executor - re_executor - 32 - DEBUG - WaitTime：1000
-2022-02-18 14:29:01 - re_executor.py - re_executor - re_executor - 36 - DEBUG - 接口状态断言成功，200 == 200
-2022-02-18 14:29:01 - re_executor.py - re_executor - re_executor - 45 - DEBUG - 元素记录成功：{'name_4': '赵宁', 'name_5': '李晨宇', 'name_6': '赵宁', 'name_7': '李晨宇', 'code': '200', 'msg': 'Success Create', 'name': 'admin', 'openid': 'ee05c00110670eb569d9073af06bd1a0', 'ip': '61.50.119.242'}
-2022-02-18 14:29:01 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.code 断言成功，200 == 200
-2022-02-18 14:29:01 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.msg 断言成功，Success Create == Success Create
-2022-02-18 14:29:01 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.name 断言成功，admin == admin
-2022-02-18 14:29:01 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.openid 断言成功，ee05c00110670eb569d9073af06bd1a0 == ee05c00110670eb569d9073af06bd1a0
-2022-02-18 14:29:01 - executor1.py - executor1 - execute1 - 42 - ERROR - 断言失败，111.199.188.94 != 61.50.119.242
-2022-02-18 14:29:01 - executor1.py - executor1 - execute1 - 15 - DEBUG - ----------开始执行用例：测试用例01----------
-2022-02-18 14:29:01 - executor1.py - executor1 - execute1 - 29 - DEBUG - 数据库元素记录成功：{'name_0': '赵宁', 'name_1': '李晨宇', 'name_2': '赵宁', 'name_3': '李晨宇'}
-2022-02-18 14:29:01 - connectionpool.py - connectionpool - _new_conn - 228 - DEBUG - Starting new HTTP connection (1): 39.98.138.157:8008
-2022-02-18 14:29:01 - connectionpool.py - connectionpool - _make_request - 456 - DEBUG - http://39.98.138.157:8008 "POST /login/ HTTP/1.1" 200 136
-2022-02-18 14:29:01 - re_executor.py - re_executor - re_executor - 27 - DEBUG - url:http://39.98.138.157:8008/login/，method:POST，headers:{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '39', 'Content-Type': 'application/json'}，body:b'{"name": "admin", "password": "123456"}'
-2022-02-18 14:29:01 - re_executor.py - re_executor - re_executor - 30 - DEBUG - response:{"code": "200", "msg": "Success Create", "data": {"name": "admin", "openid": "ee05c00110670eb569d9073af06bd1a0"}, "ip": "61.50.119.242"}
-2022-02-18 14:29:01 - re_executor.py - re_executor - re_executor - 32 - DEBUG - WaitTime：1000
-2022-02-18 14:29:02 - re_executor.py - re_executor - re_executor - 36 - DEBUG - 接口状态断言成功，200 == 200
-2022-02-18 14:29:02 - re_executor.py - re_executor - re_executor - 45 - DEBUG - 元素记录成功：{'name_0': '赵宁', 'name_1': '李晨宇', 'name_2': '赵宁', 'name_3': '李晨宇', 'openid': 'ee05c00110670eb569d9073af06bd1a0'}
-2022-02-18 14:29:02 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.code 断言成功，200 == 200
-2022-02-18 14:29:02 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.msg 断言成功，Success Create == Success Create
-2022-02-18 14:29:02 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.name 断言成功，admin == admin
-2022-02-18 14:29:02 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.openid 断言成功，ee05c00110670eb569d9073af06bd1a0 == ee05c00110670eb569d9073af06bd1a0
-2022-02-18 14:29:02 - executor1.py - executor1 - execute1 - 42 - ERROR - 断言失败，111.199.188.94 != 61.50.119.242
-2022-02-18 14:29:02 - executor1.py - executor1 - execute1 - 15 - DEBUG - ----------开始执行用例：测试用例02----------
-2022-02-18 14:29:02 - executor1.py - executor1 - execute1 - 29 - DEBUG - 数据库元素记录成功：{'name_4': '赵宁', 'name_5': '李晨宇', 'name_6': '赵宁', 'name_7': '李晨宇'}
-2022-02-18 14:29:02 - connectionpool.py - connectionpool - _new_conn - 228 - DEBUG - Starting new HTTP connection (1): 39.98.138.157:8008
-2022-02-18 14:29:02 - connectionpool.py - connectionpool - _make_request - 456 - DEBUG - http://39.98.138.157:8008 "POST /login/ HTTP/1.1" 200 136
-2022-02-18 14:29:02 - re_executor.py - re_executor - re_executor - 27 - DEBUG - url:http://39.98.138.157:8008/login/，method:POST，headers:{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '39', 'Content-Type': 'application/json'}，body:b'{"name": "admin", "password": "123456"}'
-2022-02-18 14:29:02 - re_executor.py - re_executor - re_executor - 30 - DEBUG - response:{"code": "200", "msg": "Success Create", "data": {"name": "admin", "openid": "ee05c00110670eb569d9073af06bd1a0"}, "ip": "61.50.119.242"}
-2022-02-18 14:29:02 - re_executor.py - re_executor - re_executor - 32 - DEBUG - WaitTime：1000
-2022-02-18 14:29:03 - re_executor.py - re_executor - re_executor - 36 - DEBUG - 接口状态断言成功，200 == 200
-2022-02-18 14:29:03 - re_executor.py - re_executor - re_executor - 45 - DEBUG - 元素记录成功：{'name_4': '赵宁', 'name_5': '李晨宇', 'name_6': '赵宁', 'name_7': '李晨宇', 'code': '200', 'msg': 'Success Create', 'name': 'admin', 'openid': 'ee05c00110670eb569d9073af06bd1a0', 'ip': '61.50.119.242'}
-2022-02-18 14:29:03 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.code 断言成功，200 == 200
-2022-02-18 14:29:03 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.msg 断言成功，Success Create == Success Create
-2022-02-18 14:29:03 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.name 断言成功，admin == admin
-2022-02-18 14:29:03 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.openid 断言成功，ee05c00110670eb569d9073af06bd1a0 == ee05c00110670eb569d9073af06bd1a0
-2022-02-18 14:29:03 - executor1.py - executor1 - execute1 - 42 - ERROR - 断言失败，111.199.188.94 != 61.50.119.242
-2022-02-18 14:29:03 - executor1.py - executor1 - execute1 - 15 - DEBUG - ----------开始执行用例：test01----------
-2022-02-18 14:29:03 - executor1.py - executor1 - execute1 - 29 - DEBUG - 数据库元素记录成功：{'name_0': '赵宁', 'name_1': '李晨宇', 'name_2': '赵宁', 'name_3': '李晨宇'}
-2022-02-18 14:29:03 - connectionpool.py - connectionpool - _new_conn - 228 - DEBUG - Starting new HTTP connection (1): 39.98.138.157:8008
-2022-02-18 14:29:04 - connectionpool.py - connectionpool - _make_request - 456 - DEBUG - http://39.98.138.157:8008 "POST /login/ HTTP/1.1" 200 136
-2022-02-18 14:29:04 - re_executor.py - re_executor - re_executor - 27 - DEBUG - url:http://39.98.138.157:8008/login/，method:POST，headers:{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '39', 'Content-Type': 'application/json'}，body:b'{"name": "admin", "password": "123456"}'
-2022-02-18 14:29:04 - re_executor.py - re_executor - re_executor - 30 - DEBUG - response:{"code": "200", "msg": "Success Create", "data": {"name": "admin", "openid": "ee05c00110670eb569d9073af06bd1a0"}, "ip": "61.50.119.242"}
-2022-02-18 14:29:04 - re_executor.py - re_executor - re_executor - 32 - DEBUG - WaitTime：1000
-2022-02-18 14:29:05 - re_executor.py - re_executor - re_executor - 36 - DEBUG - 接口状态断言成功，200 == 200
-2022-02-18 14:29:05 - re_executor.py - re_executor - re_executor - 45 - DEBUG - 元素记录成功：{'name_0': '赵宁', 'name_1': '李晨宇', 'name_2': '赵宁', 'name_3': '李晨宇', 'openid': 'ee05c00110670eb569d9073af06bd1a0'}
-2022-02-18 14:29:05 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.code 断言成功，200 == 200
-2022-02-18 14:29:05 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.msg 断言成功，Success Create == Success Create
-2022-02-18 14:29:05 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.name 断言成功，admin == admin
-2022-02-18 14:29:05 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.openid 断言成功，ee05c00110670eb569d9073af06bd1a0 == ee05c00110670eb569d9073af06bd1a0
-2022-02-18 14:29:05 - executor1.py - executor1 - execute1 - 42 - ERROR - 断言失败，111.199.188.94 != 61.50.119.242
-2022-02-18 14:29:05 - executor1.py - executor1 - execute1 - 15 - DEBUG - ----------开始执行用例：测试用例02----------
-2022-02-18 14:29:05 - executor1.py - executor1 - execute1 - 29 - DEBUG - 数据库元素记录成功：{'name_4': '赵宁', 'name_5': '李晨宇', 'name_6': '赵宁', 'name_7': '李晨宇'}
-2022-02-18 14:29:05 - connectionpool.py - connectionpool - _new_conn - 228 - DEBUG - Starting new HTTP connection (1): 39.98.138.157:8008
-2022-02-18 14:29:05 - connectionpool.py - connectionpool - _make_request - 456 - DEBUG - http://39.98.138.157:8008 "POST /login/ HTTP/1.1" 200 136
-2022-02-18 14:29:05 - re_executor.py - re_executor - re_executor - 27 - DEBUG - url:http://39.98.138.157:8008/login/，method:POST，headers:{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '39', 'Content-Type': 'application/json'}，body:b'{"name": "admin", "password": "123456"}'
-2022-02-18 14:29:05 - re_executor.py - re_executor - re_executor - 30 - DEBUG - response:{"code": "200", "msg": "Success Create", "data": {"name": "admin", "openid": "ee05c00110670eb569d9073af06bd1a0"}, "ip": "61.50.119.242"}
-2022-02-18 14:29:05 - re_executor.py - re_executor - re_executor - 32 - DEBUG - WaitTime：1000
-2022-02-18 14:29:06 - re_executor.py - re_executor - re_executor - 36 - DEBUG - 接口状态断言成功，200 == 200
-2022-02-18 14:29:06 - re_executor.py - re_executor - re_executor - 45 - DEBUG - 元素记录成功：{'name_4': '赵宁', 'name_5': '李晨宇', 'name_6': '赵宁', 'name_7': '李晨宇', 'code': '200', 'msg': 'Success Create', 'name': 'admin', 'openid': 'ee05c00110670eb569d9073af06bd1a0', 'ip': '61.50.119.242'}
-2022-02-18 14:29:06 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.code 断言成功，200 == 200
-2022-02-18 14:29:06 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.msg 断言成功，Success Create == Success Create
-2022-02-18 14:29:06 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.name 断言成功，admin == admin
-2022-02-18 14:29:06 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.openid 断言成功，ee05c00110670eb569d9073af06bd1a0 == ee05c00110670eb569d9073af06bd1a0
-2022-02-18 14:29:06 - executor1.py - executor1 - execute1 - 42 - ERROR - 断言失败，111.199.188.94 != 61.50.119.242
-2022-02-18 14:29:06 - executor1.py - executor1 - execute1 - 15 - DEBUG - ----------开始执行用例：address01----------
-2022-02-18 14:29:06 - executor1.py - executor1 - execute1 - 29 - DEBUG - 数据库元素记录成功：{'name_0': '赵宁', 'name_1': '李晨宇', 'name_2': '赵宁', 'name_3': '李晨宇'}
-2022-02-18 14:29:06 - connectionpool.py - connectionpool - _new_conn - 228 - DEBUG - Starting new HTTP connection (1): 39.98.138.157:8008
-2022-02-18 14:29:06 - connectionpool.py - connectionpool - _make_request - 456 - DEBUG - http://39.98.138.157:8008 "POST /login/ HTTP/1.1" 200 136
-2022-02-18 14:29:06 - re_executor.py - re_executor - re_executor - 27 - DEBUG - url:http://39.98.138.157:8008/login/，method:POST，headers:{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '39', 'Content-Type': 'application/json'}，body:b'{"name": "admin", "password": "123456"}'
-2022-02-18 14:29:06 - re_executor.py - re_executor - re_executor - 30 - DEBUG - response:{"code": "200", "msg": "Success Create", "data": {"name": "admin", "openid": "ee05c00110670eb569d9073af06bd1a0"}, "ip": "61.50.119.242"}
-2022-02-18 14:29:06 - re_executor.py - re_executor - re_executor - 32 - DEBUG - WaitTime：1000
-2022-02-18 14:29:07 - re_executor.py - re_executor - re_executor - 36 - DEBUG - 接口状态断言成功，200 == 200
-2022-02-18 14:29:07 - re_executor.py - re_executor - re_executor - 45 - DEBUG - 元素记录成功：{'name_0': '赵宁', 'name_1': '李晨宇', 'name_2': '赵宁', 'name_3': '李晨宇', 'code': '200', 'msg': 'Success Create', 'name': 'admin', 'openid': 'ee05c00110670eb569d9073af06bd1a0', 'ippp': '61.50.119.242'}
-2022-02-18 14:29:07 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.code 断言成功，200 == 200
-2022-02-18 14:29:07 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.msg 断言成功，Success Create == Success Create
-2022-02-18 14:29:07 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.name 断言成功，admin == admin
-2022-02-18 14:29:07 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.openid 断言成功，ee05c00110670eb569d9073af06bd1a0 == ee05c00110670eb569d9073af06bd1a0
-2022-02-18 14:29:07 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.code 存在
-2022-02-18 14:29:07 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.msg 存在
-2022-02-18 14:29:07 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.data.name 存在
-2022-02-18 14:29:07 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.data.openid 存在
-2022-02-18 14:29:07 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.ip 存在
-2022-02-18 14:29:08 - connectionpool.py - connectionpool - _make_request - 456 - DEBUG - http://39.98.138.157:8008 "POST /login/ HTTP/1.1" 200 136
-2022-02-18 14:29:08 - re_executor.py - re_executor - re_executor - 27 - DEBUG - url:http://39.98.138.157:8008/login/，method:POST，headers:{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'sessionid=rnj6dxno2duegzeu9joe5tlrknvch2e1', 'Content-Length': '39', 'Content-Type': 'application/json'}，body:b'{"name": "admin", "password": "123456"}'
-2022-02-18 14:29:08 - re_executor.py - re_executor - re_executor - 30 - DEBUG - response:{"code": "200", "msg": "Success Create", "data": {"name": "admin", "openid": "ee05c00110670eb569d9073af06bd1a0"}, "ip": "61.50.119.242"}
-2022-02-18 14:29:08 - re_executor.py - re_executor - re_executor - 32 - DEBUG - WaitTime：1000
-2022-02-18 14:29:09 - re_executor.py - re_executor - re_executor - 36 - DEBUG - 接口状态断言成功，200 == 200
-2022-02-18 14:29:09 - re_executor.py - re_executor - re_executor - 45 - DEBUG - 元素记录成功：{'name_0': '赵宁', 'name_1': '李晨宇', 'name_2': '赵宁', 'name_3': '李晨宇', 'code': '200', 'msg': 'Success Create', 'name': 'admin', 'openid': 'ee05c00110670eb569d9073af06bd1a0', 'ippp': '61.50.119.242', 'ip': '61.50.119.242'}
-2022-02-18 14:29:09 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.code 断言成功，200 == 200
-2022-02-18 14:29:09 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.msg 断言成功，Success Create == Success Create
-2022-02-18 14:29:09 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.name 断言成功，admin == admin
-2022-02-18 14:29:09 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.openid 断言成功，ee05c00110670eb569d9073af06bd1a0 == ee05c00110670eb569d9073af06bd1a0
-2022-02-18 14:29:09 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.code 存在
-2022-02-18 14:29:09 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.msg 存在
-2022-02-18 14:29:09 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.data.name 存在
-2022-02-18 14:29:09 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.data.openid 存在
-2022-02-18 14:29:09 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.ip 存在
-2022-02-18 14:29:09 - connectionpool.py - connectionpool - _make_request - 456 - DEBUG - http://39.98.138.157:8008 "POST /asn/list/ HTTP/1.1" 200 321
-2022-02-18 14:29:09 - re_executor.py - re_executor - re_executor - 27 - DEBUG - url:http://39.98.138.157:8008/asn/list/，method:POST，headers:{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'token': 'ee05c00110670eb569d9073af06bd1a0', 'Cookie': 'sessionid=rnj6dxno2duegzeu9joe5tlrknvch2e1', 'Content-Length': '20', 'Content-Type': 'application/json'}，body:b'{"creater": "admin"}'
-2022-02-18 14:29:09 - re_executor.py - re_executor - re_executor - 30 - DEBUG - response:{"id":4695,"openid":"ee05c00110670eb569d9073af06bd1a0","asn_code":"ASN00001425","supplier":"","bar_code":"3e10e4e22ae9692e6f545d530d49b194","creater":"admin","asn_status":1,"total_weight":0.0,"total_volume":0.0,"transportation_fee":{},"create_time":"2022-02-18T14:29:09.466872","update_time":"2022-02-18T14:29:09.466893"}
-2022-02-18 14:29:09 - re_executor.py - re_executor - re_executor - 32 - DEBUG - WaitTime：1000
-2022-02-18 14:29:10 - re_executor.py - re_executor - re_executor - 36 - DEBUG - 接口状态断言成功，200 == 200
-2022-02-18 14:29:10 - re_executor.py - re_executor - re_executor - 45 - DEBUG - 元素记录成功：{'name_0': '赵宁', 'name_1': '李晨宇', 'name_2': '赵宁', 'name_3': '李晨宇', 'code': '200', 'msg': 'Success Create', 'name': 'admin', 'openid': 'ee05c00110670eb569d9073af06bd1a0', 'ippp': '61.50.119.242', 'ip': '61.50.119.242', 'id': 4695, 'asn_code': 'ASN00001425', 'bar_code': '3e10e4e22ae9692e6f545d530d49b194', 'creater': 'admin'}
-2022-02-18 14:29:10 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.openid 断言成功，ee05c00110670eb569d9073af06bd1a0 == ee05c00110670eb569d9073af06bd1a0
-2022-02-18 14:29:10 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.id 存在
-2022-02-18 14:29:10 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.asn_code 存在
-2022-02-18 14:29:10 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.supplier 存在
-2022-02-18 14:29:10 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.bar_code 存在
-2022-02-18 14:29:10 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.asn_status 存在
-2022-02-18 14:29:10 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.total_weight 存在
-2022-02-18 14:29:10 - executor1.py - executor1 - execute1 - 38 - DEBUG - ----------用例address01执行完毕----------
-2022-02-18 14:29:10 - executor1.py - executor1 - execute1 - 15 - DEBUG - ----------开始执行用例：address02----------
-2022-02-18 14:29:10 - executor1.py - executor1 - execute1 - 29 - DEBUG - 数据库元素记录成功：{'name_4': '赵宁', 'name_5': '李晨宇', 'name_6': '赵宁', 'name_7': '李晨宇'}
-2022-02-18 14:29:10 - connectionpool.py - connectionpool - _new_conn - 228 - DEBUG - Starting new HTTP connection (1): 39.98.138.157:8008
-2022-02-18 14:29:10 - connectionpool.py - connectionpool - _make_request - 456 - DEBUG - http://39.98.138.157:8008 "POST /login/ HTTP/1.1" 200 136
-2022-02-18 14:29:10 - re_executor.py - re_executor - re_executor - 27 - DEBUG - url:http://39.98.138.157:8008/login/，method:POST，headers:{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '39', 'Content-Type': 'application/json'}，body:b'{"name": "admin", "password": "123456"}'
-2022-02-18 14:29:10 - re_executor.py - re_executor - re_executor - 30 - DEBUG - response:{"code": "200", "msg": "Success Create", "data": {"name": "admin", "openid": "ee05c00110670eb569d9073af06bd1a0"}, "ip": "61.50.119.242"}
-2022-02-18 14:29:10 - re_executor.py - re_executor - re_executor - 32 - DEBUG - WaitTime：1000
-2022-02-18 14:29:11 - re_executor.py - re_executor - re_executor - 36 - DEBUG - 接口状态断言成功，200 == 200
-2022-02-18 14:29:11 - re_executor.py - re_executor - re_executor - 45 - DEBUG - 元素记录成功：{'name_4': '赵宁', 'name_5': '李晨宇', 'name_6': '赵宁', 'name_7': '李晨宇', 'code': '200', 'msg': 'Success Create', 'name': 'admin', 'openid': 'ee05c00110670eb569d9073af06bd1a0', 'ip': '61.50.119.242'}
-2022-02-18 14:29:11 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.code 断言成功，200 == 200
-2022-02-18 14:29:11 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.msg 断言成功，Success Create == Success Create
-2022-02-18 14:29:11 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.name 断言成功，admin == admin
-2022-02-18 14:29:11 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.openid 断言成功，ee05c00110670eb569d9073af06bd1a0 == ee05c00110670eb569d9073af06bd1a0
-2022-02-18 14:29:11 - executor1.py - executor1 - execute1 - 42 - ERROR - 断言失败，111.199.188.94 != 61.50.119.242
-2022-02-18 14:29:11 - executor1.py - executor1 - execute1 - 15 - DEBUG - ----------开始执行用例：pic01----------
-2022-02-18 14:29:11 - executor1.py - executor1 - execute1 - 29 - DEBUG - 数据库元素记录成功：{'name_0': '赵宁', 'name_1': '李晨宇', 'name_2': '赵宁', 'name_3': '李晨宇'}
-2022-02-18 14:29:11 - connectionpool.py - connectionpool - _new_conn - 228 - DEBUG - Starting new HTTP connection (1): 39.98.138.157:8008
-2022-02-18 14:29:11 - connectionpool.py - connectionpool - _make_request - 456 - DEBUG - http://39.98.138.157:8008 "POST /login/ HTTP/1.1" 200 136
-2022-02-18 14:29:11 - re_executor.py - re_executor - re_executor - 27 - DEBUG - url:http://39.98.138.157:8008/login/，method:POST，headers:{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '39', 'Content-Type': 'application/json'}，body:b'{"name": "admin", "password": "123456"}'
-2022-02-18 14:29:11 - re_executor.py - re_executor - re_executor - 30 - DEBUG - response:{"code": "200", "msg": "Success Create", "data": {"name": "admin", "openid": "ee05c00110670eb569d9073af06bd1a0"}, "ip": "61.50.119.242"}
-2022-02-18 14:29:11 - re_executor.py - re_executor - re_executor - 32 - DEBUG - WaitTime：1000
-2022-02-18 14:29:12 - re_executor.py - re_executor - re_executor - 36 - DEBUG - 接口状态断言成功，200 == 200
-2022-02-18 14:29:12 - re_executor.py - re_executor - re_executor - 45 - DEBUG - 元素记录成功：{'name_0': '赵宁', 'name_1': '李晨宇', 'name_2': '赵宁', 'name_3': '李晨宇', 'code': '200', 'msg': 'Success Create', 'name': 'admin', 'openid': 'ee05c00110670eb569d9073af06bd1a0', 'ippp': '61.50.119.242'}
-2022-02-18 14:29:12 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.code 断言成功，200 == 200
-2022-02-18 14:29:12 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.msg 断言成功，Success Create == Success Create
-2022-02-18 14:29:12 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.name 断言成功，admin == admin
-2022-02-18 14:29:12 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.openid 断言成功，ee05c00110670eb569d9073af06bd1a0 == ee05c00110670eb569d9073af06bd1a0
-2022-02-18 14:29:13 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.code 存在
-2022-02-18 14:29:13 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.msg 存在
-2022-02-18 14:29:13 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.data.name 存在
-2022-02-18 14:29:13 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.data.openid 存在
-2022-02-18 14:29:13 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.ip 存在
-2022-02-18 14:29:13 - connectionpool.py - connectionpool - _make_request - 456 - DEBUG - http://39.98.138.157:8008 "POST /login/ HTTP/1.1" 200 136
-2022-02-18 14:29:13 - re_executor.py - re_executor - re_executor - 27 - DEBUG - url:http://39.98.138.157:8008/login/，method:POST，headers:{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'sessionid=wa0n7h8lxdeotaq26at8bs7c2ef1edsa', 'Content-Length': '39', 'Content-Type': 'application/json'}，body:b'{"name": "admin", "password": "123456"}'
-2022-02-18 14:29:13 - re_executor.py - re_executor - re_executor - 30 - DEBUG - response:{"code": "200", "msg": "Success Create", "data": {"name": "admin", "openid": "ee05c00110670eb569d9073af06bd1a0"}, "ip": "61.50.119.242"}
-2022-02-18 14:29:13 - re_executor.py - re_executor - re_executor - 32 - DEBUG - WaitTime：1000
-2022-02-18 14:29:14 - re_executor.py - re_executor - re_executor - 36 - DEBUG - 接口状态断言成功，200 == 200
-2022-02-18 14:29:14 - re_executor.py - re_executor - re_executor - 45 - DEBUG - 元素记录成功：{'name_0': '赵宁', 'name_1': '李晨宇', 'name_2': '赵宁', 'name_3': '李晨宇', 'code': '200', 'msg': 'Success Create', 'name': 'admin', 'openid': 'ee05c00110670eb569d9073af06bd1a0', 'ippp': '61.50.119.242', 'ip': '61.50.119.242'}
-2022-02-18 14:29:14 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.code 断言成功，200 == 200
-2022-02-18 14:29:14 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.msg 断言成功，Success Create == Success Create
-2022-02-18 14:29:14 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.name 断言成功，admin == admin
-2022-02-18 14:29:14 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.openid 断言成功，ee05c00110670eb569d9073af06bd1a0 == ee05c00110670eb569d9073af06bd1a0
-2022-02-18 14:29:14 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.code 存在
-2022-02-18 14:29:14 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.msg 存在
-2022-02-18 14:29:14 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.data.name 存在
-2022-02-18 14:29:14 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.data.openid 存在
-2022-02-18 14:29:14 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.ip 存在
-2022-02-18 14:29:14 - connectionpool.py - connectionpool - _make_request - 456 - DEBUG - http://39.98.138.157:8008 "POST /asn/list/ HTTP/1.1" 200 321
-2022-02-18 14:29:14 - re_executor.py - re_executor - re_executor - 27 - DEBUG - url:http://39.98.138.157:8008/asn/list/，method:POST，headers:{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'token': 'ee05c00110670eb569d9073af06bd1a0', 'Cookie': 'sessionid=wa0n7h8lxdeotaq26at8bs7c2ef1edsa', 'Content-Length': '20', 'Content-Type': 'application/json'}，body:b'{"creater": "admin"}'
-2022-02-18 14:29:14 - re_executor.py - re_executor - re_executor - 30 - DEBUG - response:{"id":4696,"openid":"ee05c00110670eb569d9073af06bd1a0","asn_code":"ASN00001426","supplier":"","bar_code":"2bbb48632cc6af3c59332b0d1250cf83","creater":"admin","asn_status":1,"total_weight":0.0,"total_volume":0.0,"transportation_fee":{},"create_time":"2022-02-18T14:29:14.587228","update_time":"2022-02-18T14:29:14.587249"}
-2022-02-18 14:29:14 - re_executor.py - re_executor - re_executor - 32 - DEBUG - WaitTime：1000
-2022-02-18 14:29:15 - re_executor.py - re_executor - re_executor - 36 - DEBUG - 接口状态断言成功，200 == 200
-2022-02-18 14:29:15 - re_executor.py - re_executor - re_executor - 45 - DEBUG - 元素记录成功：{'name_0': '赵宁', 'name_1': '李晨宇', 'name_2': '赵宁', 'name_3': '李晨宇', 'code': '200', 'msg': 'Success Create', 'name': 'admin', 'openid': 'ee05c00110670eb569d9073af06bd1a0', 'ippp': '61.50.119.242', 'ip': '61.50.119.242', 'id': 4696, 'asn_code': 'ASN00001426', 'bar_code': '2bbb48632cc6af3c59332b0d1250cf83', 'creater': 'admin'}
-2022-02-18 14:29:15 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.openid 断言成功，ee05c00110670eb569d9073af06bd1a0 == ee05c00110670eb569d9073af06bd1a0
-2022-02-18 14:29:15 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.id 存在
-2022-02-18 14:29:15 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.asn_code 存在
-2022-02-18 14:29:15 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.supplier 存在
-2022-02-18 14:29:15 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.bar_code 存在
-2022-02-18 14:29:15 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.asn_status 存在
-2022-02-18 14:29:15 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.total_weight 存在
-2022-02-18 14:29:15 - executor1.py - executor1 - execute1 - 38 - DEBUG - ----------用例pic01执行完毕----------
-2022-02-18 14:29:15 - executor1.py - executor1 - execute1 - 15 - DEBUG - ----------开始执行用例：pic02----------
-2022-02-18 14:29:15 - executor1.py - executor1 - execute1 - 29 - DEBUG - 数据库元素记录成功：{'name_4': '赵宁', 'name_5': '李晨宇', 'name_6': '赵宁', 'name_7': '李晨宇'}
-2022-02-18 14:29:15 - connectionpool.py - connectionpool - _new_conn - 228 - DEBUG - Starting new HTTP connection (1): 39.98.138.157:8008
-2022-02-18 14:29:15 - connectionpool.py - connectionpool - _make_request - 456 - DEBUG - http://39.98.138.157:8008 "POST /login/ HTTP/1.1" 200 136
-2022-02-18 14:29:15 - re_executor.py - re_executor - re_executor - 27 - DEBUG - url:http://39.98.138.157:8008/login/，method:POST，headers:{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '39', 'Content-Type': 'application/json'}，body:b'{"name": "admin", "password": "123456"}'
-2022-02-18 14:29:15 - re_executor.py - re_executor - re_executor - 30 - DEBUG - response:{"code": "200", "msg": "Success Create", "data": {"name": "admin", "openid": "ee05c00110670eb569d9073af06bd1a0"}, "ip": "61.50.119.242"}
-2022-02-18 14:29:15 - re_executor.py - re_executor - re_executor - 32 - DEBUG - WaitTime：1000
-2022-02-18 14:29:16 - re_executor.py - re_executor - re_executor - 36 - DEBUG - 接口状态断言成功，200 == 200
-2022-02-18 14:29:16 - re_executor.py - re_executor - re_executor - 45 - DEBUG - 元素记录成功：{'name_4': '赵宁', 'name_5': '李晨宇', 'name_6': '赵宁', 'name_7': '李晨宇', 'code': '200', 'msg': 'Success Create', 'name': 'admin', 'openid': 'ee05c00110670eb569d9073af06bd1a0', 'ip': '61.50.119.242'}
-2022-02-18 14:29:16 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.code 断言成功，200 == 200
-2022-02-18 14:29:16 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.msg 断言成功，Success Create == Success Create
-2022-02-18 14:29:16 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.name 断言成功，admin == admin
-2022-02-18 14:29:16 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.openid 断言成功，ee05c00110670eb569d9073af06bd1a0 == ee05c00110670eb569d9073af06bd1a0
-2022-02-18 14:29:16 - executor1.py - executor1 - execute1 - 42 - ERROR - 断言失败，111.199.188.94 != 61.50.119.242
+2022-02-21 14:28:36 - executor1.py - executor1 - execute1 - 15 - DEBUG - ----------开始执行用例：测试用例03----------
+2022-02-21 14:28:36 - executor1.py - executor1 - execute1 - 29 - DEBUG - 数据库元素记录成功：{'name_0': '赵宁', 'name_1': '李晨宇', 'name_2': '赵宁', 'name_3': '李晨宇'}
+2022-02-21 14:28:36 - connectionpool.py - connectionpool - _new_conn - 228 - DEBUG - Starting new HTTP connection (1): 39.98.138.157:8008
+2022-02-21 14:28:36 - connectionpool.py - connectionpool - _make_request - 456 - DEBUG - http://39.98.138.157:8008 "POST /login/ HTTP/1.1" 200 136
+2022-02-21 14:28:36 - re_executor.py - re_executor - re_executor - 27 - DEBUG - url:http://39.98.138.157:8008/login/，method:POST，headers:{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '39', 'Content-Type': 'application/json'}，body:b'{"name": "admin", "password": "123456"}'
+2022-02-21 14:28:36 - re_executor.py - re_executor - re_executor - 30 - DEBUG - response:{"code": "200", "msg": "Success Create", "data": {"name": "admin", "openid": "ee05c00110670eb569d9073af06bd1a0"}, "ip": "61.50.119.242"}
+2022-02-21 14:28:36 - re_executor.py - re_executor - re_executor - 32 - DEBUG - WaitTime：1000
+2022-02-21 14:28:37 - re_executor.py - re_executor - re_executor - 36 - DEBUG - 接口状态断言成功，200 == 200
+2022-02-21 14:28:37 - re_executor.py - re_executor - re_executor - 45 - DEBUG - 元素记录成功：{'name_0': '赵宁', 'name_1': '李晨宇', 'name_2': '赵宁', 'name_3': '李晨宇', 'code': '200', 'msg': 'Success Create', 'name': 'admin', 'openid': 'ee05c00110670eb569d9073af06bd1a0', 'ippp': '61.50.119.242'}
+2022-02-21 14:28:37 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.code 断言成功，200 == 200
+2022-02-21 14:28:37 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.msg 断言成功，Success Create == Success Create
+2022-02-21 14:28:37 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.name 断言成功，admin == admin
+2022-02-21 14:28:37 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.openid 断言成功，ee05c00110670eb569d9073af06bd1a0 == ee05c00110670eb569d9073af06bd1a0
+2022-02-21 14:28:37 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.code 存在
+2022-02-21 14:28:37 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.msg 存在
+2022-02-21 14:28:37 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.data.name 存在
+2022-02-21 14:28:37 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.data.openid 存在
+2022-02-21 14:28:37 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.ip 存在
+2022-02-21 14:28:38 - connectionpool.py - connectionpool - _make_request - 456 - DEBUG - http://39.98.138.157:8008 "POST /login/ HTTP/1.1" 200 136
+2022-02-21 14:28:38 - re_executor.py - re_executor - re_executor - 27 - DEBUG - url:http://39.98.138.157:8008/login/，method:POST，headers:{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'sessionid=qr1hgr73szu23eyyw0nchbcqtpx0k287', 'Content-Length': '39', 'Content-Type': 'application/json'}，body:b'{"name": "admin", "password": "123456"}'
+2022-02-21 14:28:38 - re_executor.py - re_executor - re_executor - 30 - DEBUG - response:{"code": "200", "msg": "Success Create", "data": {"name": "admin", "openid": "ee05c00110670eb569d9073af06bd1a0"}, "ip": "61.50.119.242"}
+2022-02-21 14:28:38 - re_executor.py - re_executor - re_executor - 32 - DEBUG - WaitTime：1000
+2022-02-21 14:28:39 - re_executor.py - re_executor - re_executor - 36 - DEBUG - 接口状态断言成功，200 == 200
+2022-02-21 14:28:39 - re_executor.py - re_executor - re_executor - 45 - DEBUG - 元素记录成功：{'name_0': '赵宁', 'name_1': '李晨宇', 'name_2': '赵宁', 'name_3': '李晨宇', 'code': '200', 'msg': 'Success Create', 'name': 'admin', 'openid': 'ee05c00110670eb569d9073af06bd1a0', 'ippp': '61.50.119.242', 'ip': '61.50.119.242'}
+2022-02-21 14:28:39 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.code 断言成功，200 == 200
+2022-02-21 14:28:39 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.msg 断言成功，Success Create == Success Create
+2022-02-21 14:28:39 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.name 断言成功，admin == admin
+2022-02-21 14:28:39 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.openid 断言成功，ee05c00110670eb569d9073af06bd1a0 == ee05c00110670eb569d9073af06bd1a0
+2022-02-21 14:28:39 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.code 存在
+2022-02-21 14:28:39 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.msg 存在
+2022-02-21 14:28:39 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.data.name 存在
+2022-02-21 14:28:39 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.data.openid 存在
+2022-02-21 14:28:39 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.ip 存在
+2022-02-21 14:28:39 - connectionpool.py - connectionpool - _make_request - 456 - DEBUG - http://39.98.138.157:8008 "POST /asn/list/ HTTP/1.1" 200 321
+2022-02-21 14:28:39 - re_executor.py - re_executor - re_executor - 27 - DEBUG - url:http://39.98.138.157:8008/asn/list/，method:POST，headers:{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'token': 'ee05c00110670eb569d9073af06bd1a0', 'Cookie': 'sessionid=qr1hgr73szu23eyyw0nchbcqtpx0k287', 'Content-Length': '20', 'Content-Type': 'application/json'}，body:b'{"creater": "admin"}'
+2022-02-21 14:28:39 - re_executor.py - re_executor - re_executor - 30 - DEBUG - response:{"id":4697,"openid":"ee05c00110670eb569d9073af06bd1a0","asn_code":"ASN00001427","supplier":"","bar_code":"6bd74531a758f977d744074e299e6616","creater":"admin","asn_status":1,"total_weight":0.0,"total_volume":0.0,"transportation_fee":{},"create_time":"2022-02-21T14:28:39.401267","update_time":"2022-02-21T14:28:39.401289"}
+2022-02-21 14:28:39 - re_executor.py - re_executor - re_executor - 32 - DEBUG - WaitTime：1000
+2022-02-21 14:28:40 - re_executor.py - re_executor - re_executor - 36 - DEBUG - 接口状态断言成功，200 == 200
+2022-02-21 14:28:40 - re_executor.py - re_executor - re_executor - 45 - DEBUG - 元素记录成功：{'name_0': '赵宁', 'name_1': '李晨宇', 'name_2': '赵宁', 'name_3': '李晨宇', 'code': '200', 'msg': 'Success Create', 'name': 'admin', 'openid': 'ee05c00110670eb569d9073af06bd1a0', 'ippp': '61.50.119.242', 'ip': '61.50.119.242', 'id': 4697, 'asn_code': 'ASN00001427', 'bar_code': '6bd74531a758f977d744074e299e6616', 'creater': 'admin'}
+2022-02-21 14:28:40 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.openid 断言成功，ee05c00110670eb569d9073af06bd1a0 == ee05c00110670eb569d9073af06bd1a0
+2022-02-21 14:28:40 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.id 存在
+2022-02-21 14:28:40 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.asn_code 存在
+2022-02-21 14:28:40 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.supplier 存在
+2022-02-21 14:28:40 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.bar_code 存在
+2022-02-21 14:28:40 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.asn_status 存在
+2022-02-21 14:28:40 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.total_weight 存在
+2022-02-21 14:28:40 - executor1.py - executor1 - execute1 - 38 - DEBUG - ----------用例测试用例03执行完毕----------
+2022-02-21 14:28:40 - executor1.py - executor1 - execute1 - 15 - DEBUG - ----------开始执行用例：测试用例04----------
+2022-02-21 14:28:40 - executor1.py - executor1 - execute1 - 29 - DEBUG - 数据库元素记录成功：{'name_4': '赵宁', 'name_5': '李晨宇', 'name_6': '赵宁', 'name_7': '李晨宇'}
+2022-02-21 14:28:40 - connectionpool.py - connectionpool - _new_conn - 228 - DEBUG - Starting new HTTP connection (1): 39.98.138.157:8008
+2022-02-21 14:28:40 - connectionpool.py - connectionpool - _make_request - 456 - DEBUG - http://39.98.138.157:8008 "POST /login/ HTTP/1.1" 200 136
+2022-02-21 14:28:40 - re_executor.py - re_executor - re_executor - 27 - DEBUG - url:http://39.98.138.157:8008/login/，method:POST，headers:{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '39', 'Content-Type': 'application/json'}，body:b'{"name": "admin", "password": "123456"}'
+2022-02-21 14:28:40 - re_executor.py - re_executor - re_executor - 30 - DEBUG - response:{"code": "200", "msg": "Success Create", "data": {"name": "admin", "openid": "ee05c00110670eb569d9073af06bd1a0"}, "ip": "61.50.119.242"}
+2022-02-21 14:28:40 - re_executor.py - re_executor - re_executor - 32 - DEBUG - WaitTime：1000
+2022-02-21 14:28:41 - re_executor.py - re_executor - re_executor - 36 - DEBUG - 接口状态断言成功，200 == 200
+2022-02-21 14:28:41 - re_executor.py - re_executor - re_executor - 45 - DEBUG - 元素记录成功：{'name_4': '赵宁', 'name_5': '李晨宇', 'name_6': '赵宁', 'name_7': '李晨宇', 'code': '200', 'msg': 'Success Create', 'name': 'admin', 'openid': 'ee05c00110670eb569d9073af06bd1a0', 'ip': '61.50.119.242'}
+2022-02-21 14:28:41 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.code 断言成功，200 == 200
+2022-02-21 14:28:41 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.msg 断言成功，Success Create == Success Create
+2022-02-21 14:28:41 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.name 断言成功，admin == admin
+2022-02-21 14:28:41 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.openid 断言成功，ee05c00110670eb569d9073af06bd1a0 == ee05c00110670eb569d9073af06bd1a0
+2022-02-21 14:28:41 - executor1.py - executor1 - execute1 - 42 - ERROR - 断言失败，111.199.188.94 != 61.50.119.242
+2022-02-21 14:28:41 - executor1.py - executor1 - execute1 - 15 - DEBUG - ----------开始执行用例：测试用例01----------
+2022-02-21 14:28:41 - executor1.py - executor1 - execute1 - 29 - DEBUG - 数据库元素记录成功：{'name_0': '赵宁', 'name_1': '李晨宇', 'name_2': '赵宁', 'name_3': '李晨宇'}
+2022-02-21 14:28:41 - connectionpool.py - connectionpool - _new_conn - 228 - DEBUG - Starting new HTTP connection (1): 39.98.138.157:8008
+2022-02-21 14:28:42 - connectionpool.py - connectionpool - _make_request - 456 - DEBUG - http://39.98.138.157:8008 "POST /login/ HTTP/1.1" 200 136
+2022-02-21 14:28:42 - re_executor.py - re_executor - re_executor - 27 - DEBUG - url:http://39.98.138.157:8008/login/，method:POST，headers:{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '39', 'Content-Type': 'application/json'}，body:b'{"name": "admin", "password": "123456"}'
+2022-02-21 14:28:42 - re_executor.py - re_executor - re_executor - 30 - DEBUG - response:{"code": "200", "msg": "Success Create", "data": {"name": "admin", "openid": "ee05c00110670eb569d9073af06bd1a0"}, "ip": "61.50.119.242"}
+2022-02-21 14:28:42 - re_executor.py - re_executor - re_executor - 32 - DEBUG - WaitTime：1000
+2022-02-21 14:28:43 - re_executor.py - re_executor - re_executor - 36 - DEBUG - 接口状态断言成功，200 == 200
+2022-02-21 14:28:43 - re_executor.py - re_executor - re_executor - 45 - DEBUG - 元素记录成功：{'name_0': '赵宁', 'name_1': '李晨宇', 'name_2': '赵宁', 'name_3': '李晨宇', 'openid': 'ee05c00110670eb569d9073af06bd1a0'}
+2022-02-21 14:28:43 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.code 断言成功，200 == 200
+2022-02-21 14:28:43 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.msg 断言成功，Success Create == Success Create
+2022-02-21 14:28:43 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.name 断言成功，admin == admin
+2022-02-21 14:28:43 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.openid 断言成功，ee05c00110670eb569d9073af06bd1a0 == ee05c00110670eb569d9073af06bd1a0
+2022-02-21 14:28:43 - executor1.py - executor1 - execute1 - 42 - ERROR - 断言失败，111.199.188.94 != 61.50.119.242
+2022-02-21 14:28:43 - executor1.py - executor1 - execute1 - 15 - DEBUG - ----------开始执行用例：测试用例02----------
+2022-02-21 14:28:43 - executor1.py - executor1 - execute1 - 29 - DEBUG - 数据库元素记录成功：{'name_4': '赵宁', 'name_5': '李晨宇', 'name_6': '赵宁', 'name_7': '李晨宇'}
+2022-02-21 14:28:43 - connectionpool.py - connectionpool - _new_conn - 228 - DEBUG - Starting new HTTP connection (1): 39.98.138.157:8008
+2022-02-21 14:28:43 - connectionpool.py - connectionpool - _make_request - 456 - DEBUG - http://39.98.138.157:8008 "POST /login/ HTTP/1.1" 200 136
+2022-02-21 14:28:43 - re_executor.py - re_executor - re_executor - 27 - DEBUG - url:http://39.98.138.157:8008/login/，method:POST，headers:{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '39', 'Content-Type': 'application/json'}，body:b'{"name": "admin", "password": "123456"}'
+2022-02-21 14:28:43 - re_executor.py - re_executor - re_executor - 30 - DEBUG - response:{"code": "200", "msg": "Success Create", "data": {"name": "admin", "openid": "ee05c00110670eb569d9073af06bd1a0"}, "ip": "61.50.119.242"}
+2022-02-21 14:28:43 - re_executor.py - re_executor - re_executor - 32 - DEBUG - WaitTime：1000
+2022-02-21 14:28:44 - re_executor.py - re_executor - re_executor - 36 - DEBUG - 接口状态断言成功，200 == 200
+2022-02-21 14:28:44 - re_executor.py - re_executor - re_executor - 45 - DEBUG - 元素记录成功：{'name_4': '赵宁', 'name_5': '李晨宇', 'name_6': '赵宁', 'name_7': '李晨宇', 'code': '200', 'msg': 'Success Create', 'name': 'admin', 'openid': 'ee05c00110670eb569d9073af06bd1a0', 'ip': '61.50.119.242'}
+2022-02-21 14:28:44 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.code 断言成功，200 == 200
+2022-02-21 14:28:44 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.msg 断言成功，Success Create == Success Create
+2022-02-21 14:28:44 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.name 断言成功，admin == admin
+2022-02-21 14:28:44 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.openid 断言成功，ee05c00110670eb569d9073af06bd1a0 == ee05c00110670eb569d9073af06bd1a0
+2022-02-21 14:28:44 - executor1.py - executor1 - execute1 - 42 - ERROR - 断言失败，111.199.188.94 != 61.50.119.242
+2022-02-21 14:28:44 - executor1.py - executor1 - execute1 - 15 - DEBUG - ----------开始执行用例：test01----------
+2022-02-21 14:28:44 - executor1.py - executor1 - execute1 - 29 - DEBUG - 数据库元素记录成功：{'name_0': '赵宁', 'name_1': '李晨宇', 'name_2': '赵宁', 'name_3': '李晨宇'}
+2022-02-21 14:28:44 - connectionpool.py - connectionpool - _new_conn - 228 - DEBUG - Starting new HTTP connection (1): 39.98.138.157:8008
+2022-02-21 14:28:44 - connectionpool.py - connectionpool - _make_request - 456 - DEBUG - http://39.98.138.157:8008 "POST /login/ HTTP/1.1" 200 136
+2022-02-21 14:28:44 - re_executor.py - re_executor - re_executor - 27 - DEBUG - url:http://39.98.138.157:8008/login/，method:POST，headers:{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '39', 'Content-Type': 'application/json'}，body:b'{"name": "admin", "password": "123456"}'
+2022-02-21 14:28:44 - re_executor.py - re_executor - re_executor - 30 - DEBUG - response:{"code": "200", "msg": "Success Create", "data": {"name": "admin", "openid": "ee05c00110670eb569d9073af06bd1a0"}, "ip": "61.50.119.242"}
+2022-02-21 14:28:44 - re_executor.py - re_executor - re_executor - 32 - DEBUG - WaitTime：1000
+2022-02-21 14:28:45 - re_executor.py - re_executor - re_executor - 36 - DEBUG - 接口状态断言成功，200 == 200
+2022-02-21 14:28:45 - re_executor.py - re_executor - re_executor - 45 - DEBUG - 元素记录成功：{'name_0': '赵宁', 'name_1': '李晨宇', 'name_2': '赵宁', 'name_3': '李晨宇', 'openid': 'ee05c00110670eb569d9073af06bd1a0'}
+2022-02-21 14:28:45 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.code 断言成功，200 == 200
+2022-02-21 14:28:45 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.msg 断言成功，Success Create == Success Create
+2022-02-21 14:28:45 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.name 断言成功，admin == admin
+2022-02-21 14:28:45 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.openid 断言成功，ee05c00110670eb569d9073af06bd1a0 == ee05c00110670eb569d9073af06bd1a0
+2022-02-21 14:28:45 - executor1.py - executor1 - execute1 - 42 - ERROR - 断言失败，111.199.188.94 != 61.50.119.242
+2022-02-21 14:28:45 - executor1.py - executor1 - execute1 - 15 - DEBUG - ----------开始执行用例：测试用例02----------
+2022-02-21 14:28:45 - executor1.py - executor1 - execute1 - 29 - DEBUG - 数据库元素记录成功：{'name_4': '赵宁', 'name_5': '李晨宇', 'name_6': '赵宁', 'name_7': '李晨宇'}
+2022-02-21 14:28:45 - connectionpool.py - connectionpool - _new_conn - 228 - DEBUG - Starting new HTTP connection (1): 39.98.138.157:8008
+2022-02-21 14:28:46 - connectionpool.py - connectionpool - _make_request - 456 - DEBUG - http://39.98.138.157:8008 "POST /login/ HTTP/1.1" 200 136
+2022-02-21 14:28:46 - re_executor.py - re_executor - re_executor - 27 - DEBUG - url:http://39.98.138.157:8008/login/，method:POST，headers:{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '39', 'Content-Type': 'application/json'}，body:b'{"name": "admin", "password": "123456"}'
+2022-02-21 14:28:46 - re_executor.py - re_executor - re_executor - 30 - DEBUG - response:{"code": "200", "msg": "Success Create", "data": {"name": "admin", "openid": "ee05c00110670eb569d9073af06bd1a0"}, "ip": "61.50.119.242"}
+2022-02-21 14:28:46 - re_executor.py - re_executor - re_executor - 32 - DEBUG - WaitTime：1000
+2022-02-21 14:28:47 - re_executor.py - re_executor - re_executor - 36 - DEBUG - 接口状态断言成功，200 == 200
+2022-02-21 14:28:47 - re_executor.py - re_executor - re_executor - 45 - DEBUG - 元素记录成功：{'name_4': '赵宁', 'name_5': '李晨宇', 'name_6': '赵宁', 'name_7': '李晨宇', 'code': '200', 'msg': 'Success Create', 'name': 'admin', 'openid': 'ee05c00110670eb569d9073af06bd1a0', 'ip': '61.50.119.242'}
+2022-02-21 14:28:47 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.code 断言成功，200 == 200
+2022-02-21 14:28:47 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.msg 断言成功，Success Create == Success Create
+2022-02-21 14:28:47 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.name 断言成功，admin == admin
+2022-02-21 14:28:47 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.openid 断言成功，ee05c00110670eb569d9073af06bd1a0 == ee05c00110670eb569d9073af06bd1a0
+2022-02-21 14:28:47 - executor1.py - executor1 - execute1 - 42 - ERROR - 断言失败，111.199.188.94 != 61.50.119.242
+2022-02-21 14:28:47 - executor1.py - executor1 - execute1 - 15 - DEBUG - ----------开始执行用例：address01----------
+2022-02-21 14:28:47 - executor1.py - executor1 - execute1 - 29 - DEBUG - 数据库元素记录成功：{'name_0': '赵宁', 'name_1': '李晨宇', 'name_2': '赵宁', 'name_3': '李晨宇'}
+2022-02-21 14:28:47 - connectionpool.py - connectionpool - _new_conn - 228 - DEBUG - Starting new HTTP connection (1): 39.98.138.157:8008
+2022-02-21 14:28:47 - connectionpool.py - connectionpool - _make_request - 456 - DEBUG - http://39.98.138.157:8008 "POST /login/ HTTP/1.1" 200 136
+2022-02-21 14:28:47 - re_executor.py - re_executor - re_executor - 27 - DEBUG - url:http://39.98.138.157:8008/login/，method:POST，headers:{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '39', 'Content-Type': 'application/json'}，body:b'{"name": "admin", "password": "123456"}'
+2022-02-21 14:28:47 - re_executor.py - re_executor - re_executor - 30 - DEBUG - response:{"code": "200", "msg": "Success Create", "data": {"name": "admin", "openid": "ee05c00110670eb569d9073af06bd1a0"}, "ip": "61.50.119.242"}
+2022-02-21 14:28:47 - re_executor.py - re_executor - re_executor - 32 - DEBUG - WaitTime：1000
+2022-02-21 14:28:48 - re_executor.py - re_executor - re_executor - 36 - DEBUG - 接口状态断言成功，200 == 200
+2022-02-21 14:28:48 - re_executor.py - re_executor - re_executor - 45 - DEBUG - 元素记录成功：{'name_0': '赵宁', 'name_1': '李晨宇', 'name_2': '赵宁', 'name_3': '李晨宇', 'code': '200', 'msg': 'Success Create', 'name': 'admin', 'openid': 'ee05c00110670eb569d9073af06bd1a0', 'ippp': '61.50.119.242'}
+2022-02-21 14:28:48 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.code 断言成功，200 == 200
+2022-02-21 14:28:48 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.msg 断言成功，Success Create == Success Create
+2022-02-21 14:28:48 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.name 断言成功，admin == admin
+2022-02-21 14:28:48 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.openid 断言成功，ee05c00110670eb569d9073af06bd1a0 == ee05c00110670eb569d9073af06bd1a0
+2022-02-21 14:28:48 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.code 存在
+2022-02-21 14:28:48 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.msg 存在
+2022-02-21 14:28:48 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.data.name 存在
+2022-02-21 14:28:48 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.data.openid 存在
+2022-02-21 14:28:48 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.ip 存在
+2022-02-21 14:28:48 - connectionpool.py - connectionpool - _make_request - 456 - DEBUG - http://39.98.138.157:8008 "POST /login/ HTTP/1.1" 200 136
+2022-02-21 14:28:48 - re_executor.py - re_executor - re_executor - 27 - DEBUG - url:http://39.98.138.157:8008/login/，method:POST，headers:{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'sessionid=6b3zf6la7tw6r9cqtbff3xsub2zvu868', 'Content-Length': '39', 'Content-Type': 'application/json'}，body:b'{"name": "admin", "password": "123456"}'
+2022-02-21 14:28:48 - re_executor.py - re_executor - re_executor - 30 - DEBUG - response:{"code": "200", "msg": "Success Create", "data": {"name": "admin", "openid": "ee05c00110670eb569d9073af06bd1a0"}, "ip": "61.50.119.242"}
+2022-02-21 14:28:48 - re_executor.py - re_executor - re_executor - 32 - DEBUG - WaitTime：1000
+2022-02-21 14:28:49 - re_executor.py - re_executor - re_executor - 36 - DEBUG - 接口状态断言成功，200 == 200
+2022-02-21 14:28:49 - re_executor.py - re_executor - re_executor - 45 - DEBUG - 元素记录成功：{'name_0': '赵宁', 'name_1': '李晨宇', 'name_2': '赵宁', 'name_3': '李晨宇', 'code': '200', 'msg': 'Success Create', 'name': 'admin', 'openid': 'ee05c00110670eb569d9073af06bd1a0', 'ippp': '61.50.119.242', 'ip': '61.50.119.242'}
+2022-02-21 14:28:49 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.code 断言成功，200 == 200
+2022-02-21 14:28:49 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.msg 断言成功，Success Create == Success Create
+2022-02-21 14:28:49 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.name 断言成功，admin == admin
+2022-02-21 14:28:49 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.openid 断言成功，ee05c00110670eb569d9073af06bd1a0 == ee05c00110670eb569d9073af06bd1a0
+2022-02-21 14:28:49 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.code 存在
+2022-02-21 14:28:49 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.msg 存在
+2022-02-21 14:28:49 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.data.name 存在
+2022-02-21 14:28:49 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.data.openid 存在
+2022-02-21 14:28:49 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.ip 存在
+2022-02-21 14:28:49 - connectionpool.py - connectionpool - _make_request - 456 - DEBUG - http://39.98.138.157:8008 "POST /asn/list/ HTTP/1.1" 200 321
+2022-02-21 14:28:49 - re_executor.py - re_executor - re_executor - 27 - DEBUG - url:http://39.98.138.157:8008/asn/list/，method:POST，headers:{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'token': 'ee05c00110670eb569d9073af06bd1a0', 'Cookie': 'sessionid=6b3zf6la7tw6r9cqtbff3xsub2zvu868', 'Content-Length': '20', 'Content-Type': 'application/json'}，body:b'{"creater": "admin"}'
+2022-02-21 14:28:49 - re_executor.py - re_executor - re_executor - 30 - DEBUG - response:{"id":4698,"openid":"ee05c00110670eb569d9073af06bd1a0","asn_code":"ASN00001428","supplier":"","bar_code":"12fb2931b068e665f1856e1ceb5b0c21","creater":"admin","asn_status":1,"total_weight":0.0,"total_volume":0.0,"transportation_fee":{},"create_time":"2022-02-21T14:28:49.782080","update_time":"2022-02-21T14:28:49.782108"}
+2022-02-21 14:28:49 - re_executor.py - re_executor - re_executor - 32 - DEBUG - WaitTime：1000
+2022-02-21 14:28:50 - re_executor.py - re_executor - re_executor - 36 - DEBUG - 接口状态断言成功，200 == 200
+2022-02-21 14:28:50 - re_executor.py - re_executor - re_executor - 45 - DEBUG - 元素记录成功：{'name_0': '赵宁', 'name_1': '李晨宇', 'name_2': '赵宁', 'name_3': '李晨宇', 'code': '200', 'msg': 'Success Create', 'name': 'admin', 'openid': 'ee05c00110670eb569d9073af06bd1a0', 'ippp': '61.50.119.242', 'ip': '61.50.119.242', 'id': 4698, 'asn_code': 'ASN00001428', 'bar_code': '12fb2931b068e665f1856e1ceb5b0c21', 'creater': 'admin'}
+2022-02-21 14:28:50 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.openid 断言成功，ee05c00110670eb569d9073af06bd1a0 == ee05c00110670eb569d9073af06bd1a0
+2022-02-21 14:28:50 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.id 存在
+2022-02-21 14:28:50 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.asn_code 存在
+2022-02-21 14:28:50 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.supplier 存在
+2022-02-21 14:28:50 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.bar_code 存在
+2022-02-21 14:28:50 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.asn_status 存在
+2022-02-21 14:28:50 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.total_weight 存在
+2022-02-21 14:28:50 - executor1.py - executor1 - execute1 - 38 - DEBUG - ----------用例address01执行完毕----------
+2022-02-21 14:28:50 - executor1.py - executor1 - execute1 - 15 - DEBUG - ----------开始执行用例：address02----------
+2022-02-21 14:28:50 - executor1.py - executor1 - execute1 - 29 - DEBUG - 数据库元素记录成功：{'name_4': '赵宁', 'name_5': '李晨宇', 'name_6': '赵宁', 'name_7': '李晨宇'}
+2022-02-21 14:28:50 - connectionpool.py - connectionpool - _new_conn - 228 - DEBUG - Starting new HTTP connection (1): 39.98.138.157:8008
+2022-02-21 14:28:51 - connectionpool.py - connectionpool - _make_request - 456 - DEBUG - http://39.98.138.157:8008 "POST /login/ HTTP/1.1" 200 136
+2022-02-21 14:28:51 - re_executor.py - re_executor - re_executor - 27 - DEBUG - url:http://39.98.138.157:8008/login/，method:POST，headers:{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '39', 'Content-Type': 'application/json'}，body:b'{"name": "admin", "password": "123456"}'
+2022-02-21 14:28:51 - re_executor.py - re_executor - re_executor - 30 - DEBUG - response:{"code": "200", "msg": "Success Create", "data": {"name": "admin", "openid": "ee05c00110670eb569d9073af06bd1a0"}, "ip": "61.50.119.242"}
+2022-02-21 14:28:51 - re_executor.py - re_executor - re_executor - 32 - DEBUG - WaitTime：1000
+2022-02-21 14:28:52 - re_executor.py - re_executor - re_executor - 36 - DEBUG - 接口状态断言成功，200 == 200
+2022-02-21 14:28:52 - re_executor.py - re_executor - re_executor - 45 - DEBUG - 元素记录成功：{'name_4': '赵宁', 'name_5': '李晨宇', 'name_6': '赵宁', 'name_7': '李晨宇', 'code': '200', 'msg': 'Success Create', 'name': 'admin', 'openid': 'ee05c00110670eb569d9073af06bd1a0', 'ip': '61.50.119.242'}
+2022-02-21 14:28:52 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.code 断言成功，200 == 200
+2022-02-21 14:28:52 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.msg 断言成功，Success Create == Success Create
+2022-02-21 14:28:52 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.name 断言成功，admin == admin
+2022-02-21 14:28:52 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.openid 断言成功，ee05c00110670eb569d9073af06bd1a0 == ee05c00110670eb569d9073af06bd1a0
+2022-02-21 14:28:52 - executor1.py - executor1 - execute1 - 42 - ERROR - 断言失败，111.199.188.94 != 61.50.119.242
+2022-02-21 14:28:52 - executor1.py - executor1 - execute1 - 15 - DEBUG - ----------开始执行用例：pic01----------
+2022-02-21 14:28:52 - executor1.py - executor1 - execute1 - 29 - DEBUG - 数据库元素记录成功：{'name_0': '赵宁', 'name_1': '李晨宇', 'name_2': '赵宁', 'name_3': '李晨宇'}
+2022-02-21 14:28:52 - connectionpool.py - connectionpool - _new_conn - 228 - DEBUG - Starting new HTTP connection (1): 39.98.138.157:8008
+2022-02-21 14:28:52 - connectionpool.py - connectionpool - _make_request - 456 - DEBUG - http://39.98.138.157:8008 "POST /login/ HTTP/1.1" 200 136
+2022-02-21 14:28:52 - re_executor.py - re_executor - re_executor - 27 - DEBUG - url:http://39.98.138.157:8008/login/，method:POST，headers:{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '39', 'Content-Type': 'application/json'}，body:b'{"name": "admin", "password": "123456"}'
+2022-02-21 14:28:52 - re_executor.py - re_executor - re_executor - 30 - DEBUG - response:{"code": "200", "msg": "Success Create", "data": {"name": "admin", "openid": "ee05c00110670eb569d9073af06bd1a0"}, "ip": "61.50.119.242"}
+2022-02-21 14:28:52 - re_executor.py - re_executor - re_executor - 32 - DEBUG - WaitTime：1000
+2022-02-21 14:28:53 - re_executor.py - re_executor - re_executor - 36 - DEBUG - 接口状态断言成功，200 == 200
+2022-02-21 14:28:53 - re_executor.py - re_executor - re_executor - 45 - DEBUG - 元素记录成功：{'name_0': '赵宁', 'name_1': '李晨宇', 'name_2': '赵宁', 'name_3': '李晨宇', 'code': '200', 'msg': 'Success Create', 'name': 'admin', 'openid': 'ee05c00110670eb569d9073af06bd1a0', 'ippp': '61.50.119.242'}
+2022-02-21 14:28:53 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.code 断言成功，200 == 200
+2022-02-21 14:28:53 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.msg 断言成功，Success Create == Success Create
+2022-02-21 14:28:53 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.name 断言成功，admin == admin
+2022-02-21 14:28:53 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.openid 断言成功，ee05c00110670eb569d9073af06bd1a0 == ee05c00110670eb569d9073af06bd1a0
+2022-02-21 14:28:53 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.code 存在
+2022-02-21 14:28:53 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.msg 存在
+2022-02-21 14:28:53 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.data.name 存在
+2022-02-21 14:28:53 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.data.openid 存在
+2022-02-21 14:28:53 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.ip 存在
+2022-02-21 14:28:53 - connectionpool.py - connectionpool - _make_request - 456 - DEBUG - http://39.98.138.157:8008 "POST /login/ HTTP/1.1" 200 136
+2022-02-21 14:28:53 - re_executor.py - re_executor - re_executor - 27 - DEBUG - url:http://39.98.138.157:8008/login/，method:POST，headers:{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Cookie': 'sessionid=zabi56fx3ob6zhqkiua64e7gmokwsfhp', 'Content-Length': '39', 'Content-Type': 'application/json'}，body:b'{"name": "admin", "password": "123456"}'
+2022-02-21 14:28:53 - re_executor.py - re_executor - re_executor - 30 - DEBUG - response:{"code": "200", "msg": "Success Create", "data": {"name": "admin", "openid": "ee05c00110670eb569d9073af06bd1a0"}, "ip": "61.50.119.242"}
+2022-02-21 14:28:53 - re_executor.py - re_executor - re_executor - 32 - DEBUG - WaitTime：1000
+2022-02-21 14:28:54 - re_executor.py - re_executor - re_executor - 36 - DEBUG - 接口状态断言成功，200 == 200
+2022-02-21 14:28:54 - re_executor.py - re_executor - re_executor - 45 - DEBUG - 元素记录成功：{'name_0': '赵宁', 'name_1': '李晨宇', 'name_2': '赵宁', 'name_3': '李晨宇', 'code': '200', 'msg': 'Success Create', 'name': 'admin', 'openid': 'ee05c00110670eb569d9073af06bd1a0', 'ippp': '61.50.119.242', 'ip': '61.50.119.242'}
+2022-02-21 14:28:54 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.code 断言成功，200 == 200
+2022-02-21 14:28:54 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.msg 断言成功，Success Create == Success Create
+2022-02-21 14:28:54 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.name 断言成功，admin == admin
+2022-02-21 14:28:54 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.openid 断言成功，ee05c00110670eb569d9073af06bd1a0 == ee05c00110670eb569d9073af06bd1a0
+2022-02-21 14:28:54 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.code 存在
+2022-02-21 14:28:54 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.msg 存在
+2022-02-21 14:28:54 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.data.name 存在
+2022-02-21 14:28:54 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.data.openid 存在
+2022-02-21 14:28:54 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.ip 存在
+2022-02-21 14:28:59 - connectionpool.py - connectionpool - _make_request - 456 - DEBUG - http://39.98.138.157:8008 "POST /asn/list/ HTTP/1.1" 200 321
+2022-02-21 14:28:59 - re_executor.py - re_executor - re_executor - 27 - DEBUG - url:http://39.98.138.157:8008/asn/list/，method:POST，headers:{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'token': 'ee05c00110670eb569d9073af06bd1a0', 'Cookie': 'sessionid=zabi56fx3ob6zhqkiua64e7gmokwsfhp', 'Content-Length': '20', 'Content-Type': 'application/json'}，body:b'{"creater": "admin"}'
+2022-02-21 14:28:59 - re_executor.py - re_executor - re_executor - 30 - DEBUG - response:{"id":4699,"openid":"ee05c00110670eb569d9073af06bd1a0","asn_code":"ASN00001429","supplier":"","bar_code":"9e542d202607e05eedcce97fa29c83ea","creater":"admin","asn_status":1,"total_weight":0.0,"total_volume":0.0,"transportation_fee":{},"create_time":"2022-02-21T14:28:59.973480","update_time":"2022-02-21T14:28:59.973514"}
+2022-02-21 14:28:59 - re_executor.py - re_executor - re_executor - 32 - DEBUG - WaitTime：1000
+2022-02-21 14:29:00 - re_executor.py - re_executor - re_executor - 36 - DEBUG - 接口状态断言成功，200 == 200
+2022-02-21 14:29:00 - re_executor.py - re_executor - re_executor - 45 - DEBUG - 元素记录成功：{'name_0': '赵宁', 'name_1': '李晨宇', 'name_2': '赵宁', 'name_3': '李晨宇', 'code': '200', 'msg': 'Success Create', 'name': 'admin', 'openid': 'ee05c00110670eb569d9073af06bd1a0', 'ippp': '61.50.119.242', 'ip': '61.50.119.242', 'id': 4699, 'asn_code': 'ASN00001429', 'bar_code': '9e542d202607e05eedcce97fa29c83ea', 'creater': 'admin'}
+2022-02-21 14:29:00 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.openid 断言成功，ee05c00110670eb569d9073af06bd1a0 == ee05c00110670eb569d9073af06bd1a0
+2022-02-21 14:29:00 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.id 存在
+2022-02-21 14:29:00 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.asn_code 存在
+2022-02-21 14:29:00 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.supplier 存在
+2022-02-21 14:29:00 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.bar_code 存在
+2022-02-21 14:29:00 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.asn_status 存在
+2022-02-21 14:29:00 - functiontools.py - functiontools - KeysExist - 35 - DEBUG - 断言成功，$.total_weight 存在
+2022-02-21 14:29:00 - executor1.py - executor1 - execute1 - 38 - DEBUG - ----------用例pic01执行完毕----------
+2022-02-21 14:29:01 - executor1.py - executor1 - execute1 - 15 - DEBUG - ----------开始执行用例：pic02----------
+2022-02-21 14:29:01 - executor1.py - executor1 - execute1 - 29 - DEBUG - 数据库元素记录成功：{'name_4': '赵宁', 'name_5': '李晨宇', 'name_6': '赵宁', 'name_7': '李晨宇'}
+2022-02-21 14:29:01 - connectionpool.py - connectionpool - _new_conn - 228 - DEBUG - Starting new HTTP connection (1): 39.98.138.157:8008
+2022-02-21 14:29:07 - connectionpool.py - connectionpool - _make_request - 456 - DEBUG - http://39.98.138.157:8008 "POST /login/ HTTP/1.1" 200 136
+2022-02-21 14:29:07 - re_executor.py - re_executor - re_executor - 27 - DEBUG - url:http://39.98.138.157:8008/login/，method:POST，headers:{'User-Agent': 'python-requests/2.27.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '39', 'Content-Type': 'application/json'}，body:b'{"name": "admin", "password": "123456"}'
+2022-02-21 14:29:07 - re_executor.py - re_executor - re_executor - 30 - DEBUG - response:{"code": "200", "msg": "Success Create", "data": {"name": "admin", "openid": "ee05c00110670eb569d9073af06bd1a0"}, "ip": "61.50.119.242"}
+2022-02-21 14:29:07 - re_executor.py - re_executor - re_executor - 32 - DEBUG - WaitTime：1000
+2022-02-21 14:29:08 - re_executor.py - re_executor - re_executor - 36 - DEBUG - 接口状态断言成功，200 == 200
+2022-02-21 14:29:08 - re_executor.py - re_executor - re_executor - 45 - DEBUG - 元素记录成功：{'name_4': '赵宁', 'name_5': '李晨宇', 'name_6': '赵宁', 'name_7': '李晨宇', 'code': '200', 'msg': 'Success Create', 'name': 'admin', 'openid': 'ee05c00110670eb569d9073af06bd1a0', 'ip': '61.50.119.242'}
+2022-02-21 14:29:08 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.code 断言成功，200 == 200
+2022-02-21 14:29:08 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.msg 断言成功，Success Create == Success Create
+2022-02-21 14:29:08 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.name 断言成功，admin == admin
+2022-02-21 14:29:08 - functiontools.py - functiontools - keysAssert - 22 - DEBUG - $.data.openid 断言成功，ee05c00110670eb569d9073af06bd1a0 == ee05c00110670eb569d9073af06bd1a0
+2022-02-21 14:29:08 - executor1.py - executor1 - execute1 - 42 - ERROR - 断言失败，111.199.188.94 != 61.50.119.242
